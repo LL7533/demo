@@ -103,7 +103,6 @@ for($i =1;$i<10;$i++)
         }
         //获取页面内容，
         $articleHtml = $objInfo->getPageHtml($url.$v);
-
         if(empty($articleHtml)){
             echo $v. ' no info '."\n";
             continue;
@@ -124,9 +123,6 @@ for($i =1;$i<10;$i++)
         }
     }
 }
-
-
-
 
 class getInfo
 {
