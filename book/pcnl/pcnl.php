@@ -27,13 +27,13 @@ $pdo = new Db();
         $insertData['name'] = $objInfo->getOneInfo($html,$pregBookName);
         if(empty($insertData['name'])){
             echo $i ." no book name error\n";
-            continue;
+           // continue;
         }
         $bookId = $pdo->add('book',$insertData);
     }
     if(empty($bookId)){
         echo $i.' is error'."\n";
-        continue;
+       // continue;
     }
     //获取目录
     $bookMenu = $objInfo->getPageMenu($html,$pregMenuList);
